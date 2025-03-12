@@ -1,0 +1,17 @@
+{
+  "name": "sensory-outlet",
+  "version": "1.0.0",
+  "description": "Sensory Outlet static website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests configured\""
+  },
+  "keywords": [
+    "sensory",
+    "processing",
+    "needs",
+    "support"
+  ],
+  "author": "Sensory Outlet",
+  "license": "UNLICENSED"
+}

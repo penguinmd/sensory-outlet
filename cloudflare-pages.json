@@ -1,7 +1,14 @@
 {
   "name": "sensory-outlet",
   "build": {
-    "command": "",
-    "output_directory": "/"
+    "command": null,
+    "output_directory": "/",
+    "root_dir": "/"
+  },
+  "deployment": {
+    "routes": [
+      { "pattern": "/*", "script": null }
+    ],
+    "environment": {}
   }
 }
