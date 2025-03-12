@@ -1,0 +1,7 @@
+{
+  "name": "sensory-outlet",
+  "build": {
+    "command": "",
+    "output_directory": "/"
+  }
+}

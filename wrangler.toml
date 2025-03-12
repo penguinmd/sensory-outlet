@@ -1,0 +1,6 @@
+name = "sensory-outlet"
+compatibility_date = "2023-09-04"
+type = "website"
+
+[site]
+bucket = "/"
