@@ -1,7 +1,8 @@
 [build]
 command = ""
-upload.format = "directory"
-directory = "/"
+publish = "/"
+base = "/"
+environment = { USE_WRANGLER = "0", CF_PAGES = "1" }
 
 [site]
 bucket = "/"

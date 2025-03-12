@@ -4,10 +4,11 @@
   "description": "Sensory Outlet static website",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"No tests configured\""
+    "test": "echo \"No tests configured\"",
+    "pages:deploy": "echo 'No build needed'"
   },
   "staticFiles": {
-    "staticPath": "/",
+    "staticPath": ".",
     "directoryListing": false
   },
   "homepage": "https://sensory-outlet.com",

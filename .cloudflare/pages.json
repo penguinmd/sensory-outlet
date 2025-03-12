@@ -1,22 +1,8 @@
 {
-  "build": {
-    "command": "",
-    "upload": {
-      "format": "directory",
-      "include": ["**/*"],
-      "exclude": []
-    },
-    "output_directory": "/"
+  "buildConfig": {
+    "buildCommand": null,
+    "rootDir": "."
   },
-  "deployment": {
-    "routes": [
-      {
-        "pattern": "/*",
-        "zone_name": "sensory-outlet.com"
-      }
-    ],
-    "environment": {
-      "CLOUDFLARE_PAGES": "true"
-    }
-  }
+  "deploymentStrategy": "direct-upload",
+  "preRendering": false
 }
