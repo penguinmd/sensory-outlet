@@ -1,0 +1,7 @@
+[build]
+command = ""
+upload.format = "directory"
+directory = "/"
+
+[site]
+bucket = "/"

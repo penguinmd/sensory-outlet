@@ -1,0 +1,17 @@
+{
+  "name": "sensory-outlet",
+  "type": "static",
+  "routes": [
+    {
+      "pattern": "/*",
+      "zone_name": "sensory-outlet.com"
+    }
+  ],
+  "workers": [
+    {
+      "script": "workers-site/index.js",
+      "pattern": "/*",
+      "enabled": false
+    }
+  ]
+}

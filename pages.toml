@@ -1,0 +1,12 @@
+[build]
+command = ""
+upload.format = "directory"
+output_directory = "/"
+
+[site]
+bucket = "/"
+entry-point = "."
+
+[env.production]
+name = "sensory-outlet"
+route = ""

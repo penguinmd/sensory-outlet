@@ -6,6 +6,11 @@
   "scripts": {
     "test": "echo \"No tests configured\""
   },
+  "staticFiles": {
+    "staticPath": "/",
+    "directoryListing": false
+  },
+  "homepage": "https://sensory-outlet.com",
   "keywords": [
     "sensory",
     "processing",
