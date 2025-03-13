@@ -9,51 +9,80 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta name="description" content="Sensory Outlet - A non-profit organization providing sensory resources and support">
     <meta name="keywords" content="sensory processing, sensory needs, sensory support, non-profit, community support">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Sensory Outlet</h1>
+            <a href="index.html" class="logo">
+                <h1>Sensory Outlet</h1>
+            </a>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="resources.html">Resources</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="contact-link">Contact</a></li>
                 </ul>
             </nav>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
     <main>
         <section class="hero">
             <div class="container">
-                <h2>Welcome to Sensory Outlet</h2>
-                <p>Supporting sensory needs in our community</p>
-                <a href="services.html" class="btn hero-btn">Explore Our Services</a>
+                <h2>Empowering Through <span class="highlight">Sensory Support</span></h2>
+                <p>We provide resources, education, and community for individuals with sensory processing needs and those who support them.</p>
+                <div class="hero-buttons">
+                    <a href="services.html" class="btn hero-btn">Explore Our Services</a>
+                    <a href="contact.html" class="btn hero-btn btn-secondary">Get In Touch</a>
+                </div>
             </div>
         </section>
 
         <section class="features">
             <div class="container">
-                <div class="feature">
-                    <h3>Our Mission</h3>
-                    <p>Providing support and resources for individuals with sensory processing needs.</p>
-                    <a href="about.html" class="btn feature-btn">Learn More</a>
+                <div class="section-intro">
+                    <h2>How We <span class="text-primary">Help</span></h2>
+                    <p>Our organization provides comprehensive support for individuals with sensory processing needs</p>
                 </div>
-                <div class="feature">
-                    <h3>Services</h3>
-                    <p>Explore our programs designed to help with sensory integration.</p>
-                    <a href="services.html" class="btn feature-btn">View Services</a>
-                </div>
-                <div class="feature">
-                    <h3>Community</h3>
-                    <p>Join our supportive community and connect with others through our blog.</p>
-                    <a href="blog.html" class="btn feature-btn">Read Our Blog</a>
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>Providing evidence-based support and resources for individuals with sensory processing needs, fostering understanding, acceptance, and growth.</p>
+                        <a href="about.html" class="btn feature-btn">Learn More</a>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Services</h3>
+                        <p>Explore our comprehensive programs designed to help with sensory integration, including assessments, interventions, and educational workshops.</p>
+                        <a href="services.html" class="btn feature-btn">View Services</a>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Community</h3>
+                        <p>Join our supportive community and connect with others who understand the journey. Share experiences and stay updated through our blog.</p>
+                        <a href="blog.html" class="btn feature-btn">Read Our Blog</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -62,6 +91,12 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 Sensory Outlet. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+            </div>
         </div>
     </footer>
 

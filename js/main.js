@@ -23,9 +23,61 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Mobile menu toggle (for future implementation)
+    // Mobile menu toggle
     const setupMobileMenu = () => {
-        // This will be implemented when a mobile menu design is finalized
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const nav = document.querySelector('nav');
+        const navLinks = document.querySelectorAll('nav a');
+        
+        if (!mobileMenuBtn || !nav) return;
+        
+        // Toggle menu when button is clicked
+        mobileMenuBtn.addEventListener('click', function() {
+            this.classList.toggle('active');
+            nav.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+            
+            // Toggle aria-expanded attribute for accessibility
+            const isExpanded = this.classList.contains('active');
+            this.setAttribute('aria-expanded', isExpanded);
+            
+            // Prevent scrolling when menu is open
+            if (isExpanded) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Close menu when link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenuBtn.classList.remove('active');
+                nav.classList.remove('active');
+                document.body.classList.remove('menu-open');
+                document.body.style.overflow = '';
+                mobileMenuBtn.setAttribute('aria-expanded', false);
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (nav.classList.contains('active') && 
+                !nav.contains(e.target) && 
+                !mobileMenuBtn.contains(e.target)) {
+                mobileMenuBtn.classList.remove('active');
+                nav.classList.remove('active');
+                document.body.classList.remove('menu-open');
+                document.body.style.overflow = '';
+                mobileMenuBtn.setAttribute('aria-expanded', false);
+            }
+        });
+        
+        // Add accessibility attributes
+        mobileMenuBtn.setAttribute('aria-controls', 'primary-menu');
+        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        mobileMenuBtn.setAttribute('aria-label', 'Toggle menu');
+        nav.setAttribute('id', 'primary-menu');
     };
 
     // Handle contact form validation
